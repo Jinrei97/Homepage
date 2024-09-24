@@ -1,3 +1,9 @@
-div:first-of-type {
-    color: red;
+@font-face {
+    font-family: playfair;
+    src: url("./Fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.woff2");
+}
+
+@font-face {
+    font-family: roboto;
+    src: url("./Fonts/Roboto/Roboto-Regular.woff2");
 }
