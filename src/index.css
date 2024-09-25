@@ -11,6 +11,7 @@
 /* Global */
 body {
     padding: 0 8%;
+    margin: 0;
 }
 h1, h2, h3, h4, h5, h6, p {
     padding: 0px;
@@ -57,6 +58,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    margin-bottom: 4rem;
 }
 .projects {
     display: grid;
@@ -79,3 +81,44 @@ main {
                 justify-content: space-between;
                 margin-bottom: 1rem;
             }
+
+/* FOOTER */
+footer {
+    padding: 2rem 0;
+}
+    .footer_card {
+        display: flex;
+        justify-content: space-around;
+        padding: 0 15%;
+    }
+        .contacts_card {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding: 1rem;
+        }
+            .contacts {
+                display: flex;
+                flex-direction: column;
+            }
+                .contacts > p:first-child,
+                .contacts > p:nth-child(2) {
+                    padding-bottom: 30px;
+                }
+                .tel::before, .mail::before  {
+                    content: url("./img/phone.svg");
+                    display: inline-block;
+                    aspect-ratio: 1/1;
+                    width: 20px;
+                    padding-right: 4px;
+                    transform: translateY(4px);
+                }
+                .mail::before {
+                    content: url("./img/mail.svg");
+                }
+        .footer_img {
+            display: flex;
+            gap: 3rem;
+            padding: 0 10% 50px 10%;
+            transform: scale(1.2) translateX(8%);
+        }
