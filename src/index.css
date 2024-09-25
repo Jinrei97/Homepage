@@ -10,7 +10,7 @@
 
 /* Global */
 body {
-    padding: 0 5%;
+    padding: 0 8%;
 }
 h1, h2, h3, h4, h5, h6, p {
     padding: 0px;
@@ -53,19 +53,29 @@ header {
         }
 
 /* MAIN */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 .projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    border: 2px solid black;
 }
     .card {
-        border: 3px border black;
+        border: 3px outset rgb(92, 92, 92, 0.4);
+        box-shadow: 3px 3px rgb(92, 92, 92, 0.2);
     }
         .card > img {
-            width: 300px;
+            aspect-ratio: 0;
+            width: 100%;
         }
-        .title {
-            display: flex;
-            justify-content: space-between;
+        .description {
+            padding: 1rem;
         }
+            .title {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 1rem;
+            }
