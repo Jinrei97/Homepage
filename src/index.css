@@ -10,8 +10,12 @@
 
 /* Global */
 body {
-    padding: 0 8%;
     margin: 0;
+}
+header,
+main,
+footer {
+    padding: 0 8%;
 }
 h1, h2, h3, h4, h5, h6, p {
     padding: 0px;
@@ -34,6 +38,7 @@ img {
 /* HEADER */
 header {
     padding: 40px 0;
+    background-color: rgb(63, 63, 253);
 }
     .header_card {
         display: flex;
@@ -85,6 +90,7 @@ main {
 /* FOOTER */
 footer {
     padding: 2rem 0;
+    background-color: rgb(96, 96, 255);
 }
     .footer_card {
         display: flex;
@@ -120,5 +126,4 @@ footer {
             display: flex;
             gap: 3rem;
             padding: 0 10% 50px 10%;
-            transform: scale(1.2) translateX(8%);
         }
