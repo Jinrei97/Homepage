@@ -181,39 +181,38 @@ footer h4 {
 @media (max-width: 1000px) {
     /* HEADER */
     .header_card {
-        padding-top: 1rem;
-        padding-left: 0;
-        padding-bottom: 0;
+        padding: 1rem clamp(1rem, 5%, 50px) 0 0;
         display: inline-block;
     }
         .header_img_box {
             float: left;
-            transform: scale(1.2) translate(-15%, -7%);
+            transform: scale(1.2) translate(-30%, -7%);
             z-index: 1;
         }
             .header_img {
-                z-index: 0;
                 padding-left: 100%;
+                z-index: 0;
             }
             .header_name {
                 position: absolute;
                 top: 0;
-                right: -115%;
-                padding-top: 2.5rem;
+                right: -125%;
+                padding-top: 1.4rem;
                 font-size: 2rem;
             }
         .aboutMe {
             margin-top: 10%;
+            transform: scale(1.15) translateX(-6%);
         }
             .aboutMe h2 {
                 align-self: flex-end;
-                padding-right: 5vw;
+                padding-right: 2vw;
             }
             .wrapText {
                 float: left;
                 shape-outside: content-box;
                 height: 170px;
-                width: 150px;
+                width: 155px;
             }
     
     /* MAIN */
@@ -225,4 +224,8 @@ footer h4 {
     .footer_card {
         padding: 0 8% 0 5%;
     }
+}
+
+@media (max-width: 700px) {
+
 }
