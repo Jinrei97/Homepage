@@ -195,7 +195,7 @@ footer {
         }
             .aboutMe h2 {
                 align-self: flex-end;
-                padding-right: 2rem;
+                padding-right: 5vw;
             }
             .wrapText {
                 float: left;
