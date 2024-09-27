@@ -75,7 +75,7 @@ header::before {
             .header_name {
                 position: absolute;
                 color: white;
-                font-size: 1.5rem;
+                font-size: 1.8rem;
                 align-self: flex-end;
             }
         .aboutMe {
@@ -83,11 +83,17 @@ header::before {
             background-color: white;            
             flex-direction: column;
             justify-content: space-around;
-            padding-left: 20px;
-            padding-right: 20px;
+            padding: 0 20px 20px 20px;
             border: 3px solid var(--borderColor);
             box-shadow: 3px solid var(--borderShadowColor);
         }
+            .aboutMe h2 {
+                font-size: 30px;
+                padding: 0.8rem 0;
+            }
+            .headerText {
+                text-wrap: stable;
+            }
 
 /* MAIN */
 main {
@@ -166,11 +172,12 @@ footer {
     .header_card {
         padding-left: 0;
         display: inline-block;
+        padding-bottom: 0;
     }
         .header_img_box {
             float: left;
-            transform: none;
-            shape-outside: margin-box;
+            transform: scale(1.2) translate(-15%, -7%);
+            z-index: 1;
         }
             .header_img {
                 z-index: 0;
@@ -179,9 +186,22 @@ footer {
             .header_name {
                 position: absolute;
                 top: 0;
-                right: -130%;
+                right: -115%;
+                padding-top: 3rem;
+                font-size: 2rem;
             }
         .aboutMe {
             margin-top: 10%;
         }
+            .aboutMe h2 {
+                align-self: flex-end;
+                padding-right: 2rem;
+            }
+            .wrapText {
+                float: left;
+                shape-outside: content-box;
+                height: 170px;
+                width: 150px;
+            }
+            
 }
