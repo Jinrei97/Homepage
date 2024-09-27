@@ -164,15 +164,24 @@ footer {
 @media (max-width: 1000px) {
     /* HEADER */
     .header_card {
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
+        padding-left: 0;
+        display: inline-block;
     }
         .header_img_box {
+            float: left;
             transform: none;
-            aspect-ratio: 1/1;
+            shape-outside: margin-box;
         }
             .header_img {
+                z-index: 0;
+                padding-left: 100%;
             }
-            .aboutMe {
+            .header_name {
+                position: absolute;
+                top: 0;
+                right: -130%;
             }
+        .aboutMe {
+            margin-top: 10%;
+        }
 }
