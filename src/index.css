@@ -36,6 +36,8 @@ p {
     width: 25px;
     background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg");
     background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
 }
 .buttons {
     align-self: flex-end;
@@ -164,6 +166,10 @@ footer h4 {
                 .contacts > p:nth-child(2) {
                     padding-bottom: 30px;
                 }
+                .contacts > p:first-child {
+                    font-size: 1.3rem;
+                    font-weight: bold;
+                }
                 .tel::before, .mail::before  {
                     content: url("./img/phone.svg");
                     display: inline-block;
@@ -239,9 +245,101 @@ footer h4 {
 }
 
 @media (max-width: 700px) {
-    header {
+    /* MAIN */
+    .headerBg {
+        padding-top: 0px;
+    }
+    .headerBg::before {
+        transform: rotate(-20deg);
+        top: -1000%;
+    }
+    .header_card {
         display: flex;
         flex-direction: column;
-        
+        justify-content: center;
+        padding: 0;
     }
+        .header_img_box {
+            display: flex;
+            position:relative;
+            float: none;
+            transform: none;
+            align-self: center;
+            justify-content: center;
+        }
+            .header_img {
+                padding: 0;
+                width: 85%;
+            }
+            .header_name {
+                font-size: 3.2rem;
+                right: 0;
+                left: 9vw;
+                padding-top: 0;
+                bottom: 0;
+            }
+        .aboutMe {
+            border: none;
+            background-color: transparent;
+            transform: none;
+            padding: 0 4%;
+            margin-top: 0;
+        }
+            .aboutMe h2 {
+                position: static;
+                align-self: center;
+            }
+            .headerText {
+                padding-bottom: 1rem;
+            }
+            .wrapText {
+                width: 0;
+                height: 0;
+            }
+            .buttons {
+                align-self: center;
+            }
+    
+    /* MAIN */
+    main {
+        margin-top: 4rem;
+    }
+        main h2 {
+            align-self: center;
+            padding-bottom: 1rem;
+        }
+        .projects {
+            grid-template-columns: 1fr;
+        }
+
+    /* FOOTER */
+    footer {
+        padding: 0;
+    }
+        .footer_card {
+            flex-direction: column;
+            justify-content: center;
+            padding: 0;
+            gap: 2rem;
+        }
+            .contacts_card {
+                padding: 2rem;
+            }
+            footer h4 {
+                align-self: center;
+            }
+                .footer_btns {
+                    display: flex;
+                    gap: 1rem;
+                    justify-content: space-evenly;
+                }
+                    .footer_btns > .github {
+                        width: 5rem;
+                    }
+            
+            .footer_img {
+                transform: none;
+                padding: 0;
+                width: 100%;
+            }
 }
